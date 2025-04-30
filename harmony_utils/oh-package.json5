@@ -1,0 +1,23 @@
+{
+  "name": "@webabcd/harmony-utils",
+  "version": "1.0.0",
+  "description": "简单易用的 HarmonyOS 工具库",
+  "homepage": "https://gitee.com/webabcd",
+  "repository": "https://gitee.com/webabcd/HarmonyUtils",
+  "main": "Index.ets",
+  "author": "webabcd",
+  "license": "Apache-2.0",
+  "dependencies": {},
+  "keywords": [
+    "工具类",
+    "字符串",
+    "加解密",
+    "日志"
+  ],
+  "tags": [
+    "工具类",
+    "字符串",
+    "加解密",
+    "日志"
+  ]
+}

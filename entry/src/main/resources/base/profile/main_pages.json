@@ -1,0 +1,9 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/StringHelperDemo",
+    "pages/CryptoHelperDemo",
+    "pages/PathHelperDemo",
+    "pages/LogHelperDemo"
+  ]
+}

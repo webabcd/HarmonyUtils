@@ -12,7 +12,7 @@ export class LogHelper {
   /**
    * 打印日志的级别
    * 如需全部打印则设置为 model.LogLevel.DEBUG
-   *
+   * 如需禁用打印则设置为 model.LogLevel.NONE
    */
   static LOGLEVEL: model.LogLevel = model.LogLevel.DEBUG
 

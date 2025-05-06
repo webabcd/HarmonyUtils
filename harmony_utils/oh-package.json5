@@ -1,6 +1,6 @@
 {
   "name": "@webabcd/harmony-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "简单易用的 HarmonyOS 工具库",
   "homepage": "https://gitee.com/webabcd",
   "repository": "https://gitee.com/webabcd/HarmonyUtils",
@@ -11,12 +11,16 @@
   "keywords": [
     "工具类",
     "字符串",
+    "路径",
+    "url",
     "加解密",
     "日志"
   ],
   "tags": [
     "工具类",
     "字符串",
+    "路径",
+    "url",
     "加解密",
     "日志"
   ]

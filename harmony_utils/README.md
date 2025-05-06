@@ -3,18 +3,19 @@
 
 ## 简介
 [harmony-utils](https://ohpm.openharmony.cn/#/cn/detail/@webabcd%2Fharmony-utils)
-简单易用的 HarmonyOS 工具库，包括字符串相关，加解密相关，路径相关，日志相关等
+简单易用的 HarmonyOS 工具库，包括字符串相关，加解密相关，路径相关，url 相关，日志相关等
 
 ## 下载安装
 `ohpm i @webabcd/harmony-utils`
 
 ## 功能详解
-| 类 | 介绍 |
-|---|---|
-| StringHelper | 字符串相关 |
-| CryptoHelper | 加解密相关 |
-| PathHelper | 路径相关 |
-| LogHelper | 日志相关 |
+| 类            | 介绍     |
+|--------------|--------|
+| StringHelper | 字符串相关  |
+| CryptoHelper | 加解密相关  |
+| PathHelper   | 路径相关   |
+| UrlHelper    | url 相关 |
+| LogHelper    | 日志相关   |
 
 ## StringHelper 的示例代码
 ```
@@ -90,6 +91,34 @@ struct PathHelperDemo {
   aboutToAppear(): void {
     this.message += `路径拼接: ${PathHelper.join("/aa", "bb", "/cc", "dd.xx")}\n`
     this.message += `获取指定路径的父目录: ${PathHelper.getParentDirectory('/aa/bb/cc')}\n`
+  }
+
+  build() {
+    Column({space:10}) {
+      Button("返回").onClick(() => { router.back() })
+
+      Text(this.message)
+    }
+    .alignItems(HorizontalAlign.Start)
+  }
+}
+```
+
+## UrlHelper 的示例代码
+```
+import { UrlHelper } from '@webabcd/harmony-utils'
+import { router } from '@kit.ArkUI'
+
+@Entry
+@Component
+struct UrlHelperDemo {
+
+  @State message:string = ''
+
+  aboutToAppear(): void {
+    this.message += `url 编码: ${UrlHelper.encode('http://a.b.c/?x= 参数&y==')}\n`
+    this.message += `url 解码: ${UrlHelper.decode(UrlHelper.encode('http://a.b.c/?x= 参数&y=='))}\n`
+    this.message += `获取 url 参数: ${UrlHelper.query('http://a.b.c/?x=abc', "x")}\n`
   }
 
   build() {

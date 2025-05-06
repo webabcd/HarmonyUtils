@@ -4,6 +4,7 @@
     "pages/StringHelperDemo",
     "pages/CryptoHelperDemo",
     "pages/PathHelperDemo",
+    "pages/UrlHelperDemo",
     "pages/LogHelperDemo"
   ]
 }
